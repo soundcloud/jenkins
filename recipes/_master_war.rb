@@ -67,6 +67,4 @@ end
 Chef::Log.warn('Here we go with the runit service')
 
 # Create runit service
-runit_service 'jenkins' do
-  sv_timeout node['jenkins']['master']['runit']['sv_timeout']
-end
+runit_service 'jenkins'

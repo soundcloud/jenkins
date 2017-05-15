@@ -12,9 +12,7 @@ recipe 'jenkins::master', 'Installs a Jenkins master'
   supports os
 end
 
-depends 'runit', '>= 1.7'
-depends 'compat_resource', '>= 12.16.3'
-depends 'dpkg_autostart'
+depends 'runit'
 
 source_url 'https://github.com/chef-cookbooks/jenkins'
 issues_url 'https://github.com/chef-cookbooks/jenkins/issues'
